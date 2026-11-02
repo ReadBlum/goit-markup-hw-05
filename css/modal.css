@@ -5,6 +5,7 @@
   opacity: 0;
   position: fixed;
   top: 0;
+  pointer-events: none;
 }
 
 .modal-window.is-open {
