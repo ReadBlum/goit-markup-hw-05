@@ -475,17 +475,17 @@
 
     <div class="modal-window is-open" id="modal">
       <div class="modal">
-        <div class="close-button">
+        <button class="close-button">
           <svg
-            width="8px"
-            height="8px"
+            width="8"
+            height="8"
             aria-hidden="true"
             fill="none"
             class="close-icon"
           >
             <use href="./images/icons.svg#close"></use>
           </svg>
-        </div>
+        </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
 
         <form class="modal-form">
@@ -494,8 +494,8 @@
 
             <div class="modal-input-wrap">
               <svg
-                width="12px"
-                height="12px"
+                width="18px"
+                height="24px"
                 aria-hidden="true"
                 class="input-icon"
               >
@@ -509,8 +509,8 @@
             <label for="phone" class="modal-label">Phone</label>
             <div class="modal-input-wrap">
               <svg
-                width="12px"
-                height="12px"
+                width="18px"
+                height="24px"
                 aria-hidden="true"
                 class="input-icon"
               >
@@ -524,8 +524,8 @@
             <label for="email" class="modal-label">Email</label>
             <div class="modal-input-wrap">
               <svg
-                width="12px"
-                height="12px"
+                width="18px"
+                height="24px"
                 aria-hidden="true"
                 class="input-icon"
               >
@@ -545,10 +545,22 @@
             ></textarea>
           </div>
           <div class="checkbox-all">
-            <input type="checkbox" id="checkbox" class="checkbox" />
-            <label for="checkbox" class="modul-checkbox-label"
-              >I accept the terms and conditions of the
-              <span class="checkbox-span">Privacy Policy</span></label
+            <input
+              type="checkbox"
+              id="checkbox"
+              name="user-privacy"
+              class="checkbox"
+            />
+            <label for="checkbox" class="modul-checkbox-label">
+              <span class="custom-checkbox">
+                <svg width="10" height="8">
+                  <use href="./images/icons.svg#checkbox"></use>
+                </svg>
+              </span>
+
+              I accept the terms and conditions of the
+              <a href="#" class="checkbox-span">Privacy Policy</a>
+            </label>
             >
           </div>
           <div class="modal-form-wrapper">
