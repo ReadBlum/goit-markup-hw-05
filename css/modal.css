@@ -255,6 +255,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top: 16px;
 }
 
 .custom-checkbox {
@@ -283,4 +284,8 @@
 
 .checkbox:checked + .modul-checkbox-label .custom-checkbox svg {
   opacity: 1;
+}
+
+.textarea::placeholder {
+  color: rgba(46, 47, 66, 0.4);
 }
